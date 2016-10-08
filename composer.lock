@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "807bd8aa6a13a150784382039cf82e8c",
-    "content-hash": "1ac541e0529884ccfbe1791fcbf9359e",
+    "hash": "57c5976dfc33aeea64e317eb678b1c7f",
+    "content-hash": "8fa3d56ae239b221bc7529591f9255c5",
     "packages": [
         {
             "name": "nerd-components/config",
@@ -92,6 +92,44 @@
             ],
             "description": "Lambda-function generator",
             "time": "2016-10-05 06:41:07"
+        },
+        {
+            "name": "nerd-components/path-utils",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-components/path-utils.git",
+                "reference": "03aba0b7984cf9c822967ed481a1058affc3a6d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-components/path-utils/zipball/03aba0b7984cf9c822967ed481a1058affc3a6d0",
+                "reference": "03aba0b7984cf9c822967ed481a1058affc3a6d0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.5",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/PathUtils.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Functions for manipulations with directory paths",
+            "time": "2016-10-08 19:55:43"
         },
         {
             "name": "nerd-framework/nerd-container",
@@ -308,7 +346,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nerd-framework/nerd-framework": 20
+        "nerd-framework/nerd-framework": 20,
+        "nerd-components/path-utils": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

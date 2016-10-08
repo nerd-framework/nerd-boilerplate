@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "nerd-framework/nerd-framework": "dev-master"
+        "nerd-framework/nerd-framework": "dev-master",
+        "nerd-components/path-utils": "dev-master"
     }
 }
