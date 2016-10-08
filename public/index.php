@@ -1,5 +1,7 @@
 <?php
 
+$applicationBaseDir = __DIR__ . '/..';
+
 /**
  * Get instance of global Input and Output Interfaces
  *
@@ -17,7 +19,7 @@ $request = $input->getRequestObject();
 /**
  * Make instance of Application
  */
-$application = new \Nerd\Framework\Application();
+$application = new \Nerd\Framework\Application($applicationBaseDir);
 
 /**
  * Save entry point to Application
