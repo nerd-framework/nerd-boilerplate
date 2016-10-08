@@ -1,0 +1,17 @@
+{
+    "name": "nerd-framework/nerd-boilerplate",
+    "description": "Application Boilerplate on Nerd Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Lakhtadyr",
+            "email": "roman.lakhtadyr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "nerd-framework/nerd-framework": "dev-master"
+    }
+}
