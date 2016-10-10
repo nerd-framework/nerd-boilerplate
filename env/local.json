@@ -1,0 +1,12 @@
+{
+  "env": "local",
+
+  "database": {
+    "mysql": {
+      "hostname": "localhost",
+      "username": "root",
+      "password": "",
+      "database": "nerd"
+    }
+  }
+}
