@@ -1,42 +1,42 @@
 <?php
 
-$applicationBaseDir = \Nerd\PathUtils\go(__DIR__, '..');
+$baseDir = __DIR__ . '/../';
+$environment = 'dev';
+
+require_once $baseDir . '/vendor/autoload.php';
 
 /**
- * Get instance of global Input and Output Interfaces
- *
- * @var \Nerd\Framework\Http\InputContract $input
- * @var \Nerd\Framework\Http\OutputContract $output
+ * Get IO backend
  */
 $input  = new \Nerd\Framework\Http\IO\GenericHttpInput();
 $output = new \Nerd\Framework\Http\IO\GenericHttpOutput();
 
 /**
- * Get HTTP Request from Input Interface
+ * Get HTTP request
  */
-$request = $input->getRequestObject();
+$request = $input->getRequest();
 
 /**
  * Make instance of Application
  */
-$application = new \Nerd\Framework\Application($applicationBaseDir);
+$application = new \Nerd\Framework\Application($baseDir, $environment);
 
 /**
- * Save entry point into Application
- */
-\Nerd\Framework\Application::setInstance($application);
-
-/**
- * Handle HTTP Request by Application
+ * Handle HTTP request by Application
  */
 $response = $application->handle($request);
 
 /**
- * Prepare HTTP Response to be sent to Output
+ * Prepare HTTP response before send to output
  */
 $response->prepare($request);
 
 /**
- * Send HTTP Response to Output
+ * Send HTTP response to client
  */
 $response->render($output);
+
+/**
+ * Close HTTP response
+ */
+$response->close();
