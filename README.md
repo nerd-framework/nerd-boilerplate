@@ -1,2 +1,2 @@
 # nerd-boilerplate
-Application Boilerplate on Nerd Framework
+Base application built on Nerd Framework.
