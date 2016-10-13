@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fff5f00c76a01162acef590a25480cb9",
-    "content-hash": "71bb2321acf802bed7f2901855011077",
+    "hash": "45d309d69b736716d3628c3464be58fb",
+    "content-hash": "96976bf99772845e091a7dd8914956be",
     "packages": [
         {
             "name": "nerd-components/config",
@@ -50,17 +50,61 @@
             "time": "2016-10-08 20:14:42"
         },
         {
+            "name": "nerd-components/lambda",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-components/lambda.git",
+                "reference": "d966ea6141695946278e10101684af57e2ad0e77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-components/lambda/zipball/d966ea6141695946278e10101684af57e2ad0e77",
+                "reference": "d966ea6141695946278e10101684af57e2ad0e77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.3",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tests\\": "tests"
+                },
+                "files": [
+                    "src/Lambda.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Lambda-function generator",
+            "time": "2016-10-05 06:41:07"
+        },
+        {
             "name": "nerd-framework/nerd-container",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-container.git",
-                "reference": "77d54670df76737d207e5319a2fd2988429afd6c"
+                "reference": "5f73061b33f8c91a6c0003ae68704e2f5df9d3fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-container/zipball/77d54670df76737d207e5319a2fd2988429afd6c",
-                "reference": "77d54670df76737d207e5319a2fd2988429afd6c",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-container/zipball/5f73061b33f8c91a6c0003ae68704e2f5df9d3fc",
+                "reference": "5f73061b33f8c91a6c0003ae68704e2f5df9d3fc",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +131,7 @@
                 }
             ],
             "description": "Lightweight IoC container with dependency injection",
-            "time": "2016-10-11 14:03:49"
+            "time": "2016-10-13 21:25:10"
         },
         {
             "name": "nerd-framework/nerd-contracts",
@@ -95,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-contracts.git",
-                "reference": "35031d230a7ecba892028fac921c8bd0603f0dfd"
+                "reference": "1d9db11de6edc61f16d5e86e5fc1453b984e58f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/35031d230a7ecba892028fac921c8bd0603f0dfd",
-                "reference": "35031d230a7ecba892028fac921c8bd0603f0dfd",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/1d9db11de6edc61f16d5e86e5fc1453b984e58f4",
+                "reference": "1d9db11de6edc61f16d5e86e5fc1453b984e58f4",
                 "shasum": ""
             },
             "require-dev": {
@@ -125,7 +169,7 @@
                 }
             ],
             "description": "Framework contracts used in Nerd Framework",
-            "time": "2016-10-13 18:52:59"
+            "time": "2016-10-13 21:10:07"
         },
         {
             "name": "nerd-framework/nerd-framework",
@@ -133,19 +177,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-framework.git",
-                "reference": "9a74ff1148c017c77e23f4d6812ec8883417da54"
+                "reference": "74ce00d78bd41d12d246f7b21eb91171686af9e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-framework/zipball/9a74ff1148c017c77e23f4d6812ec8883417da54",
-                "reference": "9a74ff1148c017c77e23f4d6812ec8883417da54",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-framework/zipball/74ce00d78bd41d12d246f7b21eb91171686af9e5",
+                "reference": "74ce00d78bd41d12d246f7b21eb91171686af9e5",
                 "shasum": ""
             },
             "require": {
                 "nerd-components/config": "dev-master",
                 "nerd-framework/nerd-container": "dev-master",
                 "nerd-framework/nerd-contracts": "dev-master",
-                "nerd-framework/nerd-http": "dev-master"
+                "nerd-framework/nerd-http": "dev-master",
+                "nerd-framework/nerd-service-provider": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.6",
@@ -171,7 +216,7 @@
                 }
             ],
             "description": "Nerd Framework",
-            "time": "2016-10-13 19:06:50"
+            "time": "2016-10-13 21:30:51"
         },
         {
             "name": "nerd-framework/nerd-http",
@@ -258,6 +303,131 @@
                 }
             ],
             "time": "2016-10-13 18:05:41"
+        },
+        {
+            "name": "nerd-framework/nerd-router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-framework/nerd-router.git",
+                "reference": "e37b29b68134264e864c67618a2c42f5710f8c58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-router/zipball/e37b29b68134264e864c67618a2c42f5710f8c58",
+                "reference": "e37b29b68134264e864c67618a2c42f5710f8c58",
+                "shasum": ""
+            },
+            "require": {
+                "nerd-components/lambda": "^2.0",
+                "nerd-framework/nerd-contracts": "dev-master",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.3",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/",
+                    "tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Router component for Nerd Framework",
+            "time": "2016-10-13 20:45:19"
+        },
+        {
+            "name": "nerd-framework/nerd-routing-service",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-framework/nerd-routing-service.git",
+                "reference": "2c209c82219ab7a9e74f2093201da69b7c2622e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-routing-service/zipball/2c209c82219ab7a9e74f2093201da69b7c2622e3",
+                "reference": "2c209c82219ab7a9e74f2093201da69b7c2622e3",
+                "shasum": ""
+            },
+            "require": {
+                "nerd-framework/nerd-contracts": "dev-master",
+                "nerd-framework/nerd-router": "dev-master",
+                "nerd-framework/nerd-service-provider": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/",
+                    "tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Routing service based on router component.",
+            "time": "2016-10-13 21:15:46"
+        },
+        {
+            "name": "nerd-framework/nerd-service-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-framework/nerd-service-provider.git",
+                "reference": "d63d3a8a55b7bf4035d99d6364cceecda2270a80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-service-provider/zipball/d63d3a8a55b7bf4035d99d6364cceecda2270a80",
+                "reference": "d63d3a8a55b7bf4035d99d6364cceecda2270a80",
+                "shasum": ""
+            },
+            "require": {
+                "nerd-framework/nerd-contracts": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.6",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/",
+                    "tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Component used to create service providers",
+            "time": "2016-10-13 20:37:17"
         }
     ],
     "packages-dev": [],
@@ -265,7 +435,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "nerd-framework/nerd-framework": 20,
-        "nerd-framework/nerd-io-backend": 20
+        "nerd-framework/nerd-io-backend": 20,
+        "nerd-framework/nerd-routing-service": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

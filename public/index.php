@@ -1,5 +1,7 @@
 <?php
 
+use Nerd\Framework\Http\Request\Request;
+
 $baseDir = __DIR__ . '/../';
 $environment = 'dev';
 
@@ -20,6 +22,11 @@ $request = $input->getRequest();
  * Make instance of Application
  */
 $application = new \Nerd\Framework\Application($baseDir, $environment);
+
+/**
+ * Register all in container.
+ */
+$application->bind(Request::class, $request);
 
 /**
  * Handle HTTP request by Application
