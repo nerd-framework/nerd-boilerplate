@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "75e66c8cf557bf9b0315293db8e648e8",
-    "content-hash": "e2dfdadfdfb0c2dc2c5ce2eff1f9d373",
+    "hash": "2c92d49cc24ea36c66f3f8fa4951ec4f",
+    "content-hash": "a2556d8c7a611c02878574e1c68521d4",
     "packages": [
         {
             "name": "nerd-components/config",
@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-contracts.git",
-                "reference": "9bbcab46891fc634e7b0d02b15c2780bd7887e77"
+                "reference": "de2ac3fee4e215c4855b20c3ed3d583eb701e825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/9bbcab46891fc634e7b0d02b15c2780bd7887e77",
-                "reference": "9bbcab46891fc634e7b0d02b15c2780bd7887e77",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/de2ac3fee4e215c4855b20c3ed3d583eb701e825",
+                "reference": "de2ac3fee4e215c4855b20c3ed3d583eb701e825",
                 "shasum": ""
             },
             "require-dev": {
@@ -169,7 +169,7 @@
                 }
             ],
             "description": "Framework contracts used in Nerd Framework",
-            "time": "2016-10-18 12:07:10"
+            "time": "2016-10-18 13:01:05"
         },
         {
             "name": "nerd-framework/nerd-framework",
@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-http.git",
-                "reference": "6219b0bec81e3f7f04039c5e160a467da8fc4255"
+                "reference": "91c70c71b09d49a15dc716220c07cc24aff1af49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-http/zipball/6219b0bec81e3f7f04039c5e160a467da8fc4255",
-                "reference": "6219b0bec81e3f7f04039c5e160a467da8fc4255",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-http/zipball/91c70c71b09d49a15dc716220c07cc24aff1af49",
+                "reference": "91c70c71b09d49a15dc716220c07cc24aff1af49",
                 "shasum": ""
             },
             "require": {
@@ -261,7 +261,7 @@
                 }
             ],
             "description": "HTTP Request and Response for Nerd Framework",
-            "time": "2016-10-18 12:11:12"
+            "time": "2016-10-18 13:27:23"
         },
         {
             "name": "nerd-framework/nerd-io-backend",
@@ -526,6 +526,44 @@
                 "object graph"
             ],
             "time": "2016-09-16 13:37:59"
+        },
+        {
+            "name": "nerd-framework/nerd-test-suite",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nerd-framework/nerd-test-suite.git",
+                "reference": "728ace1c2d6bbe1caca633b2b2c898f1066bd0b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-test-suite/zipball/728ace1c2d6bbe1caca633b2b2c898f1066bd0b5",
+                "reference": "728ace1c2d6bbe1caca633b2b2c898f1066bd0b5",
+                "shasum": ""
+            },
+            "require": {
+                "nerd-framework/nerd-contracts": "dev-master",
+                "nerd-framework/nerd-http": "dev-master",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Lakhtadyr",
+                    "email": "roman.lakhtadyr@gmail.com"
+                }
+            ],
+            "description": "Test application on Nerd Framework using Nerd Test Suite.",
+            "time": "2016-10-18 13:58:40"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1738,7 +1776,8 @@
     "stability-flags": {
         "nerd-framework/nerd-framework": 20,
         "nerd-framework/nerd-io-backend": 20,
-        "nerd-framework/nerd-routing-service": 20
+        "nerd-framework/nerd-routing-service": 20,
+        "nerd-framework/nerd-test-suite": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -2,14 +2,10 @@
 
 namespace tests;
 
-use Nerd\Framework\Http\Response\PlainResponse;
-
-class HomePageTest extends FrameworkTest
+class HomePageTestCase extends TestCase
 {
     public function testStartPage()
     {
-        $response = $this->go('/');
-        $this->assertInstanceOf(PlainResponse::class, $response);
-        $this->assertEquals('Nerd Framework', $response->getContent());
+        $this->go('/')->notEmpty()->contains('Hello');
     }
 }
