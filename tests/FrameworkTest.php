@@ -2,28 +2,35 @@
 
 namespace tests;
 
-use Nerd\Framework\Http\IO\GenericHttpOutput;
+use Nerd\Framework\Application;
 use Nerd\Framework\Http\Request\Request;
+use Nerd\Framework\Http\Response\PlainResponse;
 use PHPUnit\Framework\TestCase;
 
 class FrameworkTest extends TestCase
 {
+    /**
+     * @var Application
+     */
+    private $application;
+
+    public function setUp()
+    {
+        $baseDir = __DIR__ . '/../';
+        $environment = 'test';
+        $this->application = new Application($baseDir, $environment);
+    }
+
     public function testStartPage()
     {
         $request = Request::create('/');
 
-        $baseDir = __DIR__ . '/../';
-        $environment = 'test';
-        $application = new \Nerd\Framework\Application($baseDir, $environment);
+        $response = $this->application->handle($request);
 
-        $response = $application->handle($request);
         $response->prepare($request);
 
-        $output = $this->getMockBuilder(GenericHttpOutput::class)->getMock();
-        $output->expects($this->once())
-            ->method('sendData')
-            ->with($this->equalTo('Nerd Framework'));
+        $this->assertInstanceOf(PlainResponse::class, $response);
 
-        $response->render($output);
+        $this->assertEquals('Nerd Framework', $response->getContent());
     }
 }
