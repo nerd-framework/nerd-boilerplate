@@ -1,5 +1,7 @@
 {
   "serviceProviders": [
-    "\\Nerd\\Framework\\Providers\\RoutingServiceProvider"
-  ]
+    "\\Nerd\\Framework\\Providers\\RoutingServiceProvider",
+    "\\app\\Providers\\ExceptionServiceProvider"
+  ],
+  "templateDir": "resources/view"
 }

@@ -2,10 +2,12 @@
 
 use Nerd\Framework\Http\Request\Request;
 
-$baseDir = __DIR__ . '/../';
-$environment = 'dev';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-require_once $baseDir . '/vendor/autoload.php';
+/**
+ * Get instance of Application
+ */
+$application = require __DIR__ . '/../boot/Bootstrap.php';
 
 /**
  * Get IO backend
@@ -17,11 +19,6 @@ $output = new \Nerd\Framework\Http\IO\GenericHttpOutput();
  * Get HTTP request
  */
 $request = $input->getRequest();
-
-/**
- * Make instance of Application
- */
-$application = new \Nerd\Framework\Application($baseDir, $environment);
 
 /**
  * Register all in container.
