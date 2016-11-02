@@ -2,12 +2,12 @@
 
 namespace app\Routes;
 
-use Nerd\Framework\Http\Response\PlainResponse;
+use Nerd\Framework\Http\Response;
 use Nerd\Framework\Routing\RouterContract;
 
 function getRoutes(RouterContract $router)
 {
     $router->get('/', function () {
-        return new PlainResponse("Nerd Framework");
+        return new Response\PlainResponse("Nerd Framework");
     });
 }

@@ -12,3 +12,6 @@ test:
 
 lint:
 	composer exec 'phpcs --standard=PSR2 src tests'
+
+serve:
+	php -S 0.0.0.0:6060 server.php

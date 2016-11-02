@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c92d49cc24ea36c66f3f8fa4951ec4f",
-    "content-hash": "a2556d8c7a611c02878574e1c68521d4",
+    "hash": "dcd2b5ff59bf1e0feaa14e72de7beb1c",
+    "content-hash": "b38246f0abc6eb3a741a61945d72e135",
     "packages": [
         {
             "name": "nerd-components/config",
@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-contracts.git",
-                "reference": "de2ac3fee4e215c4855b20c3ed3d583eb701e825"
+                "reference": "1c890e1092799e1dca643673c9371c27432b7c87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/de2ac3fee4e215c4855b20c3ed3d583eb701e825",
-                "reference": "de2ac3fee4e215c4855b20c3ed3d583eb701e825",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-contracts/zipball/1c890e1092799e1dca643673c9371c27432b7c87",
+                "reference": "1c890e1092799e1dca643673c9371c27432b7c87",
                 "shasum": ""
             },
             "require-dev": {
@@ -169,7 +169,7 @@
                 }
             ],
             "description": "Framework contracts used in Nerd Framework",
-            "time": "2016-10-18 13:01:05"
+            "time": "2016-11-02 15:42:42"
         },
         {
             "name": "nerd-framework/nerd-framework",
@@ -177,12 +177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-framework.git",
-                "reference": "d332c427fa44d35eb0e6583dfd443d791d7f917e"
+                "reference": "3667e4f7cd8dc735b8db034ec31efab21c9907f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-framework/zipball/d332c427fa44d35eb0e6583dfd443d791d7f917e",
-                "reference": "d332c427fa44d35eb0e6583dfd443d791d7f917e",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-framework/zipball/3667e4f7cd8dc735b8db034ec31efab21c9907f7",
+                "reference": "3667e4f7cd8dc735b8db034ec31efab21c9907f7",
                 "shasum": ""
             },
             "require": {
@@ -190,7 +190,8 @@
                 "nerd-framework/nerd-container": "dev-master",
                 "nerd-framework/nerd-contracts": "dev-master",
                 "nerd-framework/nerd-http": "dev-master",
-                "nerd-framework/nerd-service-provider": "dev-master"
+                "nerd-framework/nerd-service-provider": "dev-master",
+                "php": "^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.6",
@@ -216,7 +217,7 @@
                 }
             ],
             "description": "Nerd Framework",
-            "time": "2016-10-15 18:32:56"
+            "time": "2016-11-02 15:23:24"
         },
         {
             "name": "nerd-framework/nerd-http",
@@ -310,18 +311,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-router.git",
-                "reference": "e37b29b68134264e864c67618a2c42f5710f8c58"
+                "reference": "54227271f8e307b8afcbbbe9c31f6700b2df3011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-router/zipball/e37b29b68134264e864c67618a2c42f5710f8c58",
-                "reference": "e37b29b68134264e864c67618a2c42f5710f8c58",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-router/zipball/54227271f8e307b8afcbbbe9c31f6700b2df3011",
+                "reference": "54227271f8e307b8afcbbbe9c31f6700b2df3011",
                 "shasum": ""
             },
             "require": {
                 "nerd-components/lambda": "^2.0",
                 "nerd-framework/nerd-contracts": "dev-master",
-                "php": ">=5.6"
+                "php": ">=7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~5.3",
@@ -343,7 +344,7 @@
                 }
             ],
             "description": "Router component for Nerd Framework",
-            "time": "2016-10-13 20:45:19"
+            "time": "2016-11-02 15:44:35"
         },
         {
             "name": "nerd-framework/nerd-routing-service",
@@ -351,18 +352,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nerd-framework/nerd-routing-service.git",
-                "reference": "2c209c82219ab7a9e74f2093201da69b7c2622e3"
+                "reference": "2625eaddf04e068f17bc2496078fb7ca73448c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-routing-service/zipball/2c209c82219ab7a9e74f2093201da69b7c2622e3",
-                "reference": "2c209c82219ab7a9e74f2093201da69b7c2622e3",
+                "url": "https://api.github.com/repos/nerd-framework/nerd-routing-service/zipball/2625eaddf04e068f17bc2496078fb7ca73448c0e",
+                "reference": "2625eaddf04e068f17bc2496078fb7ca73448c0e",
                 "shasum": ""
             },
             "require": {
                 "nerd-framework/nerd-contracts": "dev-master",
                 "nerd-framework/nerd-router": "dev-master",
-                "nerd-framework/nerd-service-provider": "dev-master"
+                "nerd-framework/nerd-service-provider": "dev-master",
+                "php": "^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.6"
@@ -385,7 +387,7 @@
                 }
             ],
             "description": "Routing service based on router component.",
-            "time": "2016-10-13 21:15:46"
+            "time": "2016-11-02 15:49:02"
         },
         {
             "name": "nerd-framework/nerd-service-provider",
@@ -487,16 +489,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f"
+                "reference": "399c1f9781e222f6eb6cc238796f5200d1b7f108"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
-                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/399c1f9781e222f6eb6cc238796f5200d1b7f108",
+                "reference": "399c1f9781e222f6eb6cc238796f5200d1b7f108",
                 "shasum": ""
             },
             "require": {
@@ -525,45 +527,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2016-09-16 13:37:59"
-        },
-        {
-            "name": "nerd-framework/nerd-test-suite",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nerd-framework/nerd-test-suite.git",
-                "reference": "728ace1c2d6bbe1caca633b2b2c898f1066bd0b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nerd-framework/nerd-test-suite/zipball/728ace1c2d6bbe1caca633b2b2c898f1066bd0b5",
-                "reference": "728ace1c2d6bbe1caca633b2b2c898f1066bd0b5",
-                "shasum": ""
-            },
-            "require": {
-                "nerd-framework/nerd-contracts": "dev-master",
-                "nerd-framework/nerd-http": "dev-master",
-                "phpunit/phpunit": "^5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Roman Lakhtadyr",
-                    "email": "roman.lakhtadyr@gmail.com"
-                }
-            ],
-            "description": "Test application on Nerd Framework using Nerd Test Suite.",
-            "time": "2016-10-18 13:58:40"
+            "time": "2016-10-31 17:19:45"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -775,16 +739,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "5f3f7e736d6319d5f1fc402aff8b026da26709a3"
+                "reference": "6cba06ff75a1a63a71033e1a01b89056f3af1e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/5f3f7e736d6319d5f1fc402aff8b026da26709a3",
-                "reference": "5f3f7e736d6319d5f1fc402aff8b026da26709a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6cba06ff75a1a63a71033e1a01b89056f3af1e8d",
+                "reference": "6cba06ff75a1a63a71033e1a01b89056f3af1e8d",
                 "shasum": ""
             },
             "require": {
@@ -834,7 +798,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-07-26 14:39:29"
+            "time": "2016-11-01 05:06:24"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1019,16 +983,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7"
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60c32c5b5e79c2248001efa2560f831da11cc2d7",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
                 "shasum": ""
             },
             "require": {
@@ -1097,7 +1061,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-10-07 13:03:26"
+            "time": "2016-10-25 07:40:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1673,16 +1637,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.5",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "368b9738d4033c8b93454cb0dbd45d305135a6d3"
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/368b9738d4033c8b93454cb0dbd45d305135a6d3",
-                "reference": "368b9738d4033c8b93454cb0dbd45d305135a6d3",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/7ff51b06c6c3d5cc6686df69004a42c69df09e27",
+                "reference": "7ff51b06c6c3d5cc6686df69004a42c69df09e27",
                 "shasum": ""
             },
             "require": {
@@ -1718,7 +1682,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-25 08:27:07"
+            "time": "2016-10-24 18:41:13"
         },
         {
             "name": "webmozart/assert",
@@ -1776,11 +1740,12 @@
     "stability-flags": {
         "nerd-framework/nerd-framework": 20,
         "nerd-framework/nerd-io-backend": 20,
-        "nerd-framework/nerd-routing-service": 20,
-        "nerd-framework/nerd-test-suite": 20
+        "nerd-framework/nerd-routing-service": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.0"
+    },
     "platform-dev": []
 }
