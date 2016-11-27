@@ -15,7 +15,7 @@
     "php": "^7.0",
     "nerd-framework/nerd-framework": "dev-master",
     "nerd-framework/nerd-io-backend": "dev-master",
-    "nerd-framework/nerd-routing-service": "dev-master"
+    "nerd-framework/nerd-router": "^1.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.6"

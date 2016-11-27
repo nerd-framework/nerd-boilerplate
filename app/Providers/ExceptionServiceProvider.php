@@ -11,12 +11,11 @@ class ExceptionServiceProvider extends ServiceProvider
     public function register()
     {
         $exceptionService = new ExceptionService();
-
-        $this->getApplication()->bind(ExceptionServiceContract::class, $exceptionService);
+        $this->app->bind('app.exception-handler', $exceptionService);
     }
 
-    public static function provides()
+    public function provides()
     {
-        return [ExceptionServiceContract::class];
+        return ['app.exception-handler'];
     }
 }
